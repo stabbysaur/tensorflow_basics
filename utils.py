@@ -20,3 +20,10 @@ def wipe_dir(log_dir):
         pass
 
     os.mkdir(log_dir)
+
+def make_dir(dir):
+
+    """creates a directory if it doesn't exist"""
+
+    if not os.path.exists(dir):
+        os.makedirs(dir)
